@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Lajusen Juomapeli</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/juomapeli.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-center">
+					<h2>Lajusen Juomapeli</h2>
+					<img height="200" src="img/joker.png" id="kortti-img">
+					<br><br>
+					<button onClick="newCard();">Uusi kortti</button>
+				</div>
+
+				<div class="col-md-6">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#saannot1" aria-controls="saannot1" role="tab" data-toggle="tab">Säännöt 1</a>
+						</li>
+						<li role="presentation">
+							<a href="#saannot2" aria-controls="saannot2" role="tab" data-toggle="tab">Säännöt 2</a>
+						</li>
+						<li role="presentation">
+							<a href="#saannot3" aria-controls="saannot3" role="tab" data-toggle="tab">Säännöt 3</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="saannot1">
+							<h2>Säännöt 1</h2>
+							<p>Ässä: asd</p>
+							<p>2: asd</p>
+							<p>3: asd</p>
+							<p>4: asd</p>
+							<p>5: asd</p>
+							<p>6: asd</p>
+							<p>7: asd</p>
+							<p>8: asd</p>
+							<p>9: asd</p>
+							<p>10: asd</p>
+							<p>Jätkä: asd</p>
+							<p>Kuningatar: asd</p>
+							<p>Kuningas: asd</p>	
+						</div>
+						<div role="tabpanel" class="tab-pane" id="saannot2">
+							<h2>Säännöt 2</h2>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="saannot3">
+							<h2>Säännöt 3</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		<script src="js/juomapeli.js"></script>
+	</body>
+</html>
