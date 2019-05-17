@@ -1,66 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	    	<meta charset="utf-8">
-	    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    	<meta name="viewport" content="width=device-width, initial-scale=1">
-	    	<title>Lajusen Juomapeli</title>
-	    	<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/juomapeli.css" rel="stylesheet">
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 text-center">
-					<h2>Lajusen Juomapeli</h2>
-					<img height="200" src="img/joker.png" id="kortti-img">
-					<br><br>
-					<button onClick="newCard();">Uusi kortti</button>
-				</div>
-
-				<div class="col-md-6">
-					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active">
-							<a href="#saannot1" aria-controls="saannot1" role="tab" data-toggle="tab">Säännöt 1</a>
-						</li>
-						<li role="presentation">
-							<a href="#saannot2" aria-controls="saannot2" role="tab" data-toggle="tab">Säännöt 2</a>
-						</li>
-						<li role="presentation">
-							<a href="#saannot3" aria-controls="saannot3" role="tab" data-toggle="tab">Säännöt 3</a>
-						</li>
-					</ul>
-
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane active" id="saannot1">
-							<h2>Säännöt 1</h2>
-							<p>Ässä: asd</p>
-							<p>2: asd</p>
-							<p>3: asd</p>
-							<p>4: asd</p>
-							<p>5: asd</p>
-							<p>6: asd</p>
-							<p>7: asd</p>
-							<p>8: asd</p>
-							<p>9: asd</p>
-							<p>10: asd</p>
-							<p>Jätkä: asd</p>
-							<p>Kuningatar: asd</p>
-							<p>Kuningas: asd</p>	
-						</div>
-						<div role="tabpanel" class="tab-pane" id="saannot2">
-							<h2>Säännöt 2</h2>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="saannot3">
-							<h2>Säännöt 3</h2>
-						</div>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teh Juomapeli</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/juomapeli.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-center">
+				<h2>Teh Juomapeli</h2>
+				<img height="400" src="img/custom/hitler.png" id="card-img" onclick="newCard()">
+			</div>
+			
+			<div class="col-md-6">
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#saannot-2019" role="tab" data-toggle="tab">Juomapeli à la 2019</a>
+					</li>
+					<li role="presentation">
+						<a href="#saannot-hitler" role="tab" data-toggle="tab">Hitler</a>
+					</li>
+				</ul>
+				
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active rules" id="saannot-2019">
+						<h2>Juomapeli à la 2019</h2>
+						<p>
+							Ässä: Antaa
+							<small>Päätä kuka juo 3 huikkaa</small>
+						</p>
+						<p>
+							2: Ottaa
+							<small>Ota 3 huikkaa</small>
+						</p>
+						<p>
+							3: 123
+							<small>Kortin nostaja ottaa yhden huikan, vieressä oleva kaksi, seuraava kolme jne</small>
+						</p>
+						<p>
+							4: Hitler
+							<small>Jokaisen pitää huutaa 'hitler', viimeinen juo 3 huikkaa</small>
+						</p>
+						<p>
+							5: Hitlar
+							<small>Jokaisen pitää huutaa 'hitler', viimeinen juo 3 huikkaa</small>
+						</p>
+						<p>
+							6: Laiva on lastattu
+							<small>Kortin nostaja päättää kategorian. Epäonnistuja ottaa 3 huikkaa</small>
+						</p>
+						<p>
+							7: Vesiputous
+							<small>Kortin nostaja aloittaa juomisen. Juomisen saa lopettaa vasta kun nostaja on lopettanut</small>
+						</p>
+						<p>
+							8: Riimi
+							<small>Joku sanoo sanan ja nostajan pitää keksiä sanalle riimipari</small>
+						</p>
+						<p>
+							9: Sääntö
+							<small>Nostaja saa keksiä säännön jota kaikkien noudatettava loppupeli. Rikkomisesta joutuu juomaan 3 huikkaa</small>
+						</p>
+						<p>
+							10: Kysymys
+							<small>Nostaja saa kysyä kysymyksen toiselta pelaajalta haluamanaan ajankohtana. Jos kysytty vastaa, hän juo 3 huikkaa. Peliin liittyviä kysymyksiä ei lasketa (ns. meta-kysymys)</small>
+						</p>
+						<p>
+							Jätkä: Taukokortti
+							<small>Nostaja saa taukokortin jonka voi käyttää haluamanaan ajankohtana</small>
+						</p>
+						<p>
+							Kuningatar: Huora
+							<small>Nostaja joutuu juomaan aina kun joku muukin juo. Kortti säilyy pelin loppuun tai kunnes joku muu saa huorakortin</small>
+						</p>
+						<p>
+							Kuningas: Tarina
+							<small>Kerrotaan tarina sanomalla kaikki edelliset sanat seka 1 sana lisää</small>
+						</p>	
+					</div>
+					
+					<div role="tabpanel" class="tab-pane rules" id="saannot-hitler">
+						<h2>Hitler juomapeli</h2>
+						<p>
+							Ässä: Antaa
+							<small>Päätä kuka juo 3 huikkaa</small>
+						</p>
+						<p>
+							2: Ottaa
+							<small>Ota 3 huikkaa</small>
+						</p>
+						<p>
+							3: 123
+							<small>Kortin nostaja ottaa yhden huikan, vieressä oleva kaksi, seuraava kolme jne</small>
+						</p>
+						<p>
+							4: Hitler
+							<small>Jokaisen pitää huutaa 'hitler', viimeinen juo 3 huikkaa</small>
+						</p>
+						<p>
+							5: Hitlar
+							<small>Jokaisen pitää huutaa 'hitler', viimeinen juo 3 huikkaa</small>
+						</p>
+						<p>
+							6: Laiva on lastattu
+							<small>Kortin nostaja päättää kategorian. Epäonnistuja ottaa 3 huikkaa</small>
+						</p>
+						<p>
+							7: Vesiputous
+							<small>Kortin nostaja aloittaa juomisen. Juomisen saa lopettaa vasta kun nostaja on lopettanut</small>
+						</p>
+						<p>
+							8: Riimi
+							<small>Joku sanoo sanan ja nostajan pitää keksiä sanalle riimipari</small>
+						</p>
+						<p>
+							9: Sääntö
+							<small>Nostaja saa keksiä säännön jota kaikkien noudatettava loppupeli. Rikkomisesta joutuu juomaan 3 huikkaa</small>
+						</p>
+						<p>
+							10: Kysymys
+							<small>Nostaja saa kysyä kysymyksen toiselta pelaajalta haluamanaan ajankohtana. Jos kysytty vastaa, hän juo 3 huikkaa. Peliin liittyviä kysymyksiä ei lasketa (ns. meta-kysymys)</small>
+						</p>
+						<p>
+							Jätkä: Taukokortti
+							<small>Nostaja saa taukokortin jonka voi käyttää haluamanaan ajankohtana</small>
+						</p>
+						<p>
+							Kuningatar: Huora
+							<small>Nostaja joutuu juomaan aina kun joku muukin juo. Kortti säilyy pelin loppuun tai kunnes joku muu saa huorakortin</small>
+						</p>
+						<p>
+							Kuningas: Tarina
+							<small>Kerrotaan tarina sanomalla kaikki edelliset sanat seka 1 sana lisää</small>
+						</p>	
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/juomapeli.js"></script>
-	</body>
+	</div>
+	
+	<div class="footer">
+		Teh Juomapeli v2.0.0
+		&nbsp;&bull;&nbsp;
+		&#9400; <a href="https://juhohakkinen.fi">Juho 'jeeukko' Häkkinen</a>
+		&nbsp;&bull;&nbsp;
+		<a href="https://github.com/jeeukko/juomapeli">Fork me on GitHub</a>
+	</div>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/juomapeli.js"></script>
+</body>
 </html>

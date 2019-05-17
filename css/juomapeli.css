@@ -1,0 +1,14 @@
+.rules > p > small {
+    margin-left: 20px;
+    display: block;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #a0a0a0;
+    text-align: center;
+    padding: 5px;
+}
